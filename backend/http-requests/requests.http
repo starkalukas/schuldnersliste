@@ -1,0 +1,5 @@
+GET http://localhost:8080/debtor/getDebtorsByAccount/1000
+
+###
+
+GET http://localhost:8080/debtor/1/entries
