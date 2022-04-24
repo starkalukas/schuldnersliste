@@ -1,0 +1,6 @@
+<mat-card *ngFor="let e of entries" (click)="returnAmount(e.amount)">
+  <p>{{e.amount}}</p>
+  <p>{{e.reason}}</p>
+  <p>{{e.date}}</p>
+  <p>{{e.edited}}</p>
+</mat-card>

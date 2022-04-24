@@ -1,0 +1,11 @@
+<mat-card *ngIf="debtors != null">
+  <mat-card *ngFor="let debtor of debtors">
+    <p>Id: {{debtor.id}}</p>
+    <p>Name: {{debtor.name}}</p>
+    <p>Amount: {{debtor.amount}}</p>
+    <button mat-raised-button color="primary" (click)="showEntries(debtor.id)">Show Entries</button>
+  </mat-card>
+  <mat-card *ngIf="entries">
+    <app-entry [entries]="entries" (output)="handleOutput($event)"></app-entry>
+  </mat-card>
+</mat-card>

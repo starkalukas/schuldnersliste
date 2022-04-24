@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card *ngFor="let a of accounts">
+    <p>{{a.name}}</p>
+    <p>{{a.email}}</p>
+    <p>{{a.address}}</p>
+    <p>{{a.phone}}</p>
+    <button mat-raised-button color="primary" routerLink="debtor/{{a.id}}">Show Debtors</button>
+  </mat-card>
+</mat-card>
